@@ -1,17 +1,10 @@
-const axios = require('axios');
-const to = require('await-to-js');
-
-const asyncFn = async () => {
-    const data = await axios.get('https://crossorigin.me/https://google.com', {
-        headers: {
-            'access-control-allow-origin': '*',
-            'access-control-allow-credentials': 'true'
-        }
-    });
-
-    return data;
+const getUsers = () => {
+    return Promise.resolve({data: [{name: 'Jim'}, {name: 'Tim'}, {name: 'Karen'}]});
 }
 
+const getFoods = () => Promise.resolve({ data: [{name: 'Pizza'}, {name: 'Burger'}, {name: 'Chips'}]});
+
 module.exports = {
-    asyncFn
+    getUsers,
+    getFoods
 }
