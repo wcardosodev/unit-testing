@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import AddUserForm from './components/puppeteer/AddUserForm';
 
 function App() {
   return (
