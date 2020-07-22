@@ -9,8 +9,7 @@ test('get users', async () => {
 }, 10000);
 
 test('get foods', async () => {
-    // Fails, food should be chips not chip
-    const foods = [{name: 'Pizza'}, {name: 'Burger'}, {name: 'Chip'}];
+    const foods = [{name: 'Pizza'}, {name: 'Burger'}, {name: 'Chips'}];
     const { data } = await getFoods();
     expect(data).toEqual(foods);
 });
