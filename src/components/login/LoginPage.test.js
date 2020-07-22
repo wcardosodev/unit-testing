@@ -1,5 +1,7 @@
 const { login, getUser } = require('./LoginPage');
 
+// Integration test
+// Tests login, getUser, getUsers and validateLogin
 test('Test login', async () => {
     const user1 = await login('jimmy', 'password');
 

@@ -22,5 +22,5 @@ test('puppeteer adding user', async () => {
     });
 
     const page = await browser.newPage();
-    await page.goto('http://localhost:3000/');
+    await page.goto('http://www.google.com');
 }, 10000);
