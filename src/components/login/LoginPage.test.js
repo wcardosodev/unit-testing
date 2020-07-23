@@ -30,6 +30,7 @@ it('create random user', () => {
         createdAt: expect.any(Date),
         id: expect.any(Number)
     });
+    
 });
 
 it('will fail every time', () => {
