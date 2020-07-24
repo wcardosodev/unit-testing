@@ -2,11 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import AddUserForm from './components/puppeteer/AddUserForm';
+import { Counter } from './components/enzyme-counterApp/Counter';
 
 function App() {
   return (
     <div className="App">
       <AddUserForm />
+      {/* <Counter /> */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
