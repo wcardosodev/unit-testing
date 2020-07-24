@@ -3,9 +3,7 @@ import React, { useState} from 'react';
 export const Counter = props => {
     const [counter, setCounter] = useState(0);
 
-    const increment = () => {
-        setCounter(counter + 1);
-    };
+    const increment = () => setCounter(counter + 1);
 
     const decrement = () => {
         // Only decrement if counter is greater than 0
